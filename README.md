@@ -4,9 +4,9 @@
 
 ## Desenvolvimento 
 Na realização da aplicação foram implementados os seguintes recursos:
-*Uma fila estática com alocação dinâmica e iteradores, que representa a fila de músicas a serem tocadas preferencialmente.
-*Uma lista duplamente encadeada com sentinela e iteradores, que cumpre o papel de reter os dados da playlist, guardando assim as músicas.
-*Além disso, temos um arquivo texto, que já possui músicas previamente selecionadas, para que o processo de inserção na playlist seja menos repetitivo para o usuário toda vez que o programa for compilado novamente.
+* Uma fila estática com alocação dinâmica e iteradores, que representa a fila de músicas a serem tocadas preferencialmente.
+* Uma lista duplamente encadeada com sentinela e iteradores, que cumpre o papel de reter os dados da playlist, guardando assim as músicas.
+* Além disso, temos um arquivo texto, que já possui músicas previamente selecionadas, para que o processo de inserção na playlist seja menos repetitivo para o usuário toda vez que o programa for compilado novamente.
 
 ### Sobre a implementação da lista
 * Struct lista - é inicializada na main.c e é uma das obrigação do usuário, tendo em vista que não é possível manter a generalidade da lista com o campo struct definido. 

@@ -1,4 +1,5 @@
 # Projeto Prático de Estrutura de Dados 
+* Grupo: Daniella Yuka Hirosue, Giulia Namie Azeka, Lara Oliveira Luzeiro e Laura Rieko Marçal Imai
 * Desenvolveu-se um sistema que, por meio de uma lista e uma fila, é responsável por emular o comportamento de uma playlist em linguagem C.
 
 ## Desenvolvimento 

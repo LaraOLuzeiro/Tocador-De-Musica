@@ -1,5 +1,5 @@
 # Projeto Prático de Estrutura de Dados 
-*Desenvolveu-se um sistema que, por meio de uma lista e uma fila, é responsável por emular o comportamento de uma playlist em linguagem C.
+* Desenvolveu-se um sistema que, por meio de uma lista e uma fila, é responsável por emular o comportamento de uma playlist em linguagem C.
 
 ## Desenvolvimento 
 Na realização da aplicação foram implementados os seguintes recursos:

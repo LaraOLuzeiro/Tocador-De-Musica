@@ -1,0 +1,55 @@
+
+\begin{DoxyItemize}
+\item Grupo\+: Daniella Yuka Hirosue, Giulia Namie Azeka, Lara Oliveira Luzeiro e Laura Rieko Marçal Imai
+\item Desenvolveu-\/se um sistema que, por meio de uma lista e uma fila, é responsável por emular o comportamento de uma playlist em linguagem C.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Desenvolvimento}\label{md__r_e_a_d_m_e_autotoc_md1}
+Na realização da aplicação foram implementados os seguintes recursos\+:
+\begin{DoxyItemize}
+\item Uma fila estática com alocação dinâmica e iteradores, que representa a fila de músicas a serem tocadas preferencialmente.
+\item Uma lista duplamente encadeada com sentinela e iteradores, que cumpre o papel de reter os dados da playlist, guardando assim as músicas.
+\item Além disso, temos um arquivo texto, que já possui músicas previamente selecionadas, para que o processo de inserção na playlist seja menos repetitivo para o usuário toda vez que o programa for compilado novamente.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{Sobre a implementação da lista}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Struct lista -\/ é inicializada na \mbox{\hyperlink{main_8c}{main.\+c}} e é uma das obrigação do usuário, tendo em vista que não é possível manter a generalidade da lista com o campo struct definido.
+\item void \mbox{\hyperlink{lista_8c_a0419ed36e7080e9aba2c8e2568566fae}{inicializa\+\_\+lista(lista $\ast$p)}} -\/ é a função responsável pela inicialização da lista criada pelo usuário, é necessário se atentar ao fato de que ela demanda um ponteiro para a lista que será inicializada.
+\item void \mbox{\hyperlink{lista_8c_a4b9a3f8b6cd1066960f72b263ed8184b}{destruir\+\_\+lista(lista $\ast$p)}} -\/ a operação que destrói a lista, faz uso da função de remover no início, void lremove\+I(lista $\ast$p) , para ir eliminando os elementos até que a flag de verificação de lista vazia, a int lvazia(lista $\ast$p) , seja atinginda e, nesse momento, um free é realizado para a liberação do espaço alocado que prevenirá o vazamento de memória.
+\item int \mbox{\hyperlink{lista_8c_aca08b1da9ebd2c053d77c3c7410513f4}{vazia\+\_\+lista(lista $\ast$p)}} -\/ é uma função de tipo inteiro que verifica se a lista está vazia ou não, ou seja, se há ou não elementos inseridos nela, em caso positivo ela retorna 1, e em caso negativo ela retorna 0;
+\item int \mbox{\hyperlink{lista_8c_a9406b21c8eae63230dfba4783d0901c8}{insere\+\_\+inicio\+\_\+lista(lista $\ast$p, T item)}} -\/ função que deve inserir um elemento ao início da lista, elemento este de tipo T, um tipo genérico que pode ser alterado pelo usuário por demanda. Nesse caso, o tipo int da função possibilita que ao retornarmos 1, tenhamos uma inserção bem sucedida e ao retornarmos 0 temos uma alocação de memória que não ocorreu de modo ideal.
+\item int \mbox{\hyperlink{lista_8c_ad5ef7b6de6c184a03a0a74637dfabd3e}{insere\+\_\+fim\+\_\+lista(lista $\ast$p, T item)}} -\/ função que realiza as inserções de elemento ao fim da lista, nesse sentido, tem-\/se novamente o tipo T, que corresponde ao tipo genético do dado que há de ser inserido no fim da lista, este pode ser mudado pelo usuário sob demanda. O princípio do retorno da função segue análogo ao de inserção no início, em que 0 é inserção mal sucedida e 1 bem sucedida.
+\item void \mbox{\hyperlink{lista_8c_af7fc94554c4202723792c9a54aa2528d}{remove\+\_\+inicio\+\_\+lista(lista $\ast$p)}} -\/ é a função responsável por retirar elementos a partir do início da lista, para fazer isso, é requerida a verificação de que a lista está ou não vazia, por meio da função int lvazia(lista $\ast$p), uma vez que caso a lista esteja vazia não é possível retirar elementos dela.
+\item void \mbox{\hyperlink{lista_8c_a246e76141b96d9308daef847a7a7110b}{remove\+\_\+fim\+\_\+lista(lista $\ast$p)}} -\/ é a função que utilizamos para remover elementos do fim da lista, nesse sentido, é igualmente necessária a verificação de caso vazia, que é presente no lremove\+I(lista $\ast$p).
+\item T \mbox{\hyperlink{lista_8c_a5e63b8219343a3477415f5d014b21268}{retorna\+\_\+inicio\+\_\+lista(lista $\ast$p)}} -\/ retorna o primeiro elemento presente na lista, fazendo o uso de iteradores para isso.
+\item iterador \mbox{\hyperlink{lista_8c_a7b5c369bc952d9301aa6731945f04ddb}{iterador\+\_\+primeiro\+\_\+lista(lista $\ast$p)}} -\/ é a função que retorna o iterador contendo o primeiro elemento da lista.
+\item iterador \mbox{\hyperlink{lista_8c_aac22a59bbc6ec313319d15a58fcb8819}{iterador\+\_\+proximo\+\_\+lista(iterador i)}} -\/ é a função que retorna o próximo iterador, tendo como referência um iterador anterior que é passado como parâmetro da função.
+\item T \mbox{\hyperlink{lista_8c_ac6fa43fe1ecf3785d38d261ae6e3c077}{iterador\+\_\+elemento\+\_\+lista(iterador i)}} -\/ retorna um dado, do tipo T genérico, que é referenciado pelo iterador, para isso, a função int it\+\_\+valido\+L(iterador i) deve ser verdadeira;
+\item int \mbox{\hyperlink{lista_8c_a2977ad1772639d6e87f4c3efb54bd3c0}{iterador\+\_\+valido\+\_\+lista(iterador i)}} -\/ verifica se o iterador está de fato apontando para um elemento da lista, retornando verdadeiro caso o iterador não esteja referenciando o sentinela da lista.
+\item iterador \mbox{\hyperlink{lista_8c_ae1989e441451e47d55c122a775cf43cb}{retira\+\_\+lista(iterador i)}} -\/ remove um elemento da lista encadeada que está sendo referenciado pelo iterador, entretanto, para isso, é preciso que o iterador seja válido, ou seja se ele de fato está apontando para um elemento que pertence à lista. Se o retorno é positivo, temos que o processo de remoção é feito e posteriormente usa-\/se o free para desalocar a memória.
+\item void \mbox{\hyperlink{lista_8c_a06b65f7ff6155304349bf9800c6d789e}{iterador\+\_\+nulo\+\_\+lista(iterador $\ast$i)}} -\/ indica que a busca na lista não encontrou nenhum elemento que corresponda ao desejado, sendo assim um iterador inválido.
+\item int \mbox{\hyperlink{lista_8c_a73ac180368f45a110c9554df250b77ff}{iterador\+\_\+vazio\+\_\+lista(iterador i)}} -\/ recebe um iterador como parâmetro e verifica se seu elemento atual é NULL, ou seja se sua posição é inválida e aponta para a lista encadeada ou não. Retorna 1 se sim, retorna 0 caso não aponte para o NULL.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{Sobre a implementação da fila}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Struct fila -\/ é inicializada na \mbox{\hyperlink{main_8c}{main.\+c}} e é uma das obrigação do usuário, tendo em vista que não é possível manter a generalidade da lista com o campo struct definido.
+\item fila$\ast$ \mbox{\hyperlink{fila_8c_a689f661bd1634931991df42bad2b024e}{inicializa\+\_\+fila(int qt\+Max)}} -\/ realiza a inicialização da fila proposta pelo usuário no começo da execução, retornando, assim, o endereço alocado por ela.
+\item int vazia\+\_\+fila(fila $<$em$>$f) -\/ retorna verdadeiro caso ela esteja vazia, senão retorna falso, por vazia entende-\/se que não há elementos presentes na fila.
+\item int \mbox{\hyperlink{fila_8c_aa1a11046a8f9da57923775b30f560986}{cheia\+\_\+fila(fila $\ast$f)}} -\/ retorna verdadeiro caso todos os espaços do bloco de memória que correspondem ao vetor da fila estejam ocupados, senão retorna falso, indicando que há espaços disponíveis.
+\item void \mbox{\hyperlink{fila_8c_a64f4e082f66326c4f5cf9dc6e2f5ae38}{limpa\+\_\+fila(fila $\ast$f)}} -\/ limpa a fila, no sentido de que a percorre, liberando os espaços de memória utilizados.
+\item void \mbox{\hyperlink{fila_8c_a8d748d061fdfaf8bc9823aeb0599641e}{destroi\+\_\+fila(fila $\ast$f)}} -\/ destrói a fila, desalocando-\/a ao final da execução
+\item int \mbox{\hyperlink{fila_8c_ad18418bfa1c10bb108970ec3ebcc7428}{insere\+\_\+fila(fila $\ast$f, j dado)}} -\/ insere, ao final da fila um determinado elemento, seguindo a proposta de FIFO, em que o primeiro a entrar é o primeiro a sair e, portanto, as inserções devem ocorrer sempre ao fim. O tipo da função é inteiro e retorna 1 caso a inserção do dado de tipo j -\/ um tipo genérico que cabe ao usuário definição -\/ tenha ocorrido de maneira adequada, caso a alocação não tenha ocorrido como o proposto, 0 é retornado.
+\item j remove\+\_\+fila(fila $<$em$>$f) -\/ faz a remoção do elemento da fila, seguindo novamente a proposta do FIFO. Nesse sentido, caso a remoção ocorra de maneira adequada, retornar-\/se-\/á o ponteiro que indica o elemento a ser removido, senão retorna NULL que indica que não é possível realizar a operação.
+\item unsigned \mbox{\hyperlink{fila_8c_aa8bb8f891d5bbb55ae9436775dbe0acf}{quantidade\+\_\+fila(fila $\ast$f)}} -\/ retorna a quantidade de elementos da fila.
+\item void \mbox{\hyperlink{fila_8c_a0bb47f67dba3071336a895ac5397cec8}{iterador\+\_\+inicializa\+\_\+fila(\+Iterador $\ast$i, fila $\ast$f)}} -\/ inicializa os iteradores, recebendo do usuário um ponteiro para a struct e um ponteiro para a fila. Essa inicialização garante que quando a iteração começar, o iterador já estará apontando para o primeiro elemento da fila.
+\item \mbox{\hyperlink{struct_iterador}{Iterador}} \mbox{\hyperlink{fila_8c_aa031ea63cb0f9b293b7e3e89406483d5}{iterador\+\_\+\+Proximo\+\_\+fila(\+Iterador $\ast$i)}} -\/ incrementa o índice do elemento atual, passando para o endereço do próximo iterador, que é então retornado.
+\item \mbox{\hyperlink{struct_iterador}{Iterador}} \mbox{\hyperlink{fila_8c_aa68d74d58c058989cafc8883d589bec2}{iterador\+\_\+\+Primeiro\+\_\+fila(fila $\ast$f)}} -\/ a função cria um iterador e o passa como parâmetro, verifica se a fila está vazia ou não. Se estiver vazia, o iterador é inicializado com o valor NULL. Caso contrário, o iterador é inicializado com o endereço do primeiro elemento da fila e retorna por fim o iterador criado e inicializado.
+\item int \mbox{\hyperlink{fila_8c_aae9997f9dcb85cdd91b0782cae70d2f3}{iterador\+\_\+\+Valido\+\_\+fila(\+Iterador i)}} -\/ retorna 1 caso seja válido e 0 se não for. Para realizar essa verificação, a função compara o endereço de memória do elemento atual com o endereço de memória do último elemento da fila, caso ele esteja alocado após ele, é inválido;
+\item j \mbox{\hyperlink{fila_8c_a704fb9218473d58a47a07588ad2eb577}{iterador\+\_\+\+Elemento\+\_\+fila(\+Iterador i)}} -\/ retorna o elemento atual dos iteradores, para isso o it\+Valido\+F(\+Iterador i) deve ser verdadeiro.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Sobre o musica.\+h}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item É este o arquivo responsável por conter a struct que é usada para armazenar os campos de nome e do artista da canção em questão. Pode ser alterado pelo usuário.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Sobre a main.\+c}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item A aplicação em questão emula o funcionamento de uma playlist de música, que contém também uma fila com as prioridades, em que músicas são selecionadas, reproduzidas e posteriormente inseridas no fim da lista. 
+\end{DoxyItemize}

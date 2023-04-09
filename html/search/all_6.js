@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['inicializa_5ffila_0',['inicializa_fila',['../fila_8c.html#a689f661bd1634931991df42bad2b024e',1,'inicializa_fila(int qtMax):&#160;fila.c'],['../fila_8h.html#a689f661bd1634931991df42bad2b024e',1,'inicializa_fila(int qtMax):&#160;fila.c']]],
+  ['inicializa_5flista_1',['inicializa_lista',['../lista_8c.html#a0419ed36e7080e9aba2c8e2568566fae',1,'inicializa_lista(lista *p):&#160;lista.c'],['../lista_8h.html#a0419ed36e7080e9aba2c8e2568566fae',1,'inicializa_lista(lista *p):&#160;lista.c']]],
+  ['inicio_2',['inicio',['../structfila.html#a73f53b0349bb995757a60c9c0bde3569',1,'fila']]],
+  ['insere_5ffila_3',['insere_fila',['../fila_8c.html#ad18418bfa1c10bb108970ec3ebcc7428',1,'insere_fila(fila *f, j dado):&#160;fila.c'],['../fila_8h.html#ad18418bfa1c10bb108970ec3ebcc7428',1,'insere_fila(fila *f, j dado):&#160;fila.c']]],
+  ['insere_5ffim_5flista_4',['insere_fim_lista',['../lista_8c.html#ad5ef7b6de6c184a03a0a74637dfabd3e',1,'insere_fim_lista(lista *p, T item):&#160;lista.c'],['../lista_8h.html#ad5ef7b6de6c184a03a0a74637dfabd3e',1,'insere_fim_lista(lista *p, T item):&#160;lista.c']]],
+  ['insere_5finicio_5flista_5',['insere_inicio_lista',['../lista_8c.html#a9406b21c8eae63230dfba4783d0901c8',1,'insere_inicio_lista(lista *p, T item):&#160;lista.c'],['../lista_8h.html#a9406b21c8eae63230dfba4783d0901c8',1,'insere_inicio_lista(lista *p, T item):&#160;lista.c']]],
+  ['item_6',['item',['../structno.html#aaeb0f0ed34c31a834ce36fe4defd6c5e',1,'no']]],
+  ['iterador_7',['Iterador',['../struct_iterador.html',1,'']]],
+  ['iterador_8',['iterador',['../structiterador.html',1,'']]],
+  ['iterador_5felemento_5ffila_9',['iterador_Elemento_fila',['../fila_8c.html#a704fb9218473d58a47a07588ad2eb577',1,'iterador_Elemento_fila(Iterador i):&#160;fila.c'],['../fila_8h.html#a704fb9218473d58a47a07588ad2eb577',1,'iterador_Elemento_fila(Iterador i):&#160;fila.c']]],
+  ['iterador_5felemento_5flista_10',['iterador_elemento_lista',['../lista_8c.html#ac6fa43fe1ecf3785d38d261ae6e3c077',1,'iterador_elemento_lista(iterador i):&#160;lista.c'],['../lista_8h.html#ac6fa43fe1ecf3785d38d261ae6e3c077',1,'iterador_elemento_lista(iterador i):&#160;lista.c']]],
+  ['iterador_5finicializa_5ffila_11',['iterador_inicializa_fila',['../fila_8c.html#a0bb47f67dba3071336a895ac5397cec8',1,'iterador_inicializa_fila(Iterador *i, fila *f):&#160;fila.c'],['../fila_8h.html#a0bb47f67dba3071336a895ac5397cec8',1,'iterador_inicializa_fila(Iterador *i, fila *f):&#160;fila.c']]],
+  ['iterador_5fnulo_5flista_12',['iterador_nulo_lista',['../lista_8c.html#a06b65f7ff6155304349bf9800c6d789e',1,'iterador_nulo_lista(iterador *i):&#160;lista.c'],['../lista_8h.html#a06b65f7ff6155304349bf9800c6d789e',1,'iterador_nulo_lista(iterador *i):&#160;lista.c']]],
+  ['iterador_5fprimeiro_5ffila_13',['iterador_Primeiro_fila',['../fila_8c.html#aa68d74d58c058989cafc8883d589bec2',1,'iterador_Primeiro_fila(fila *f):&#160;fila.c'],['../fila_8h.html#aa68d74d58c058989cafc8883d589bec2',1,'iterador_Primeiro_fila(fila *f):&#160;fila.c']]],
+  ['iterador_5fprimeiro_5flista_14',['iterador_primeiro_lista',['../lista_8c.html#a7b5c369bc952d9301aa6731945f04ddb',1,'iterador_primeiro_lista(lista *p):&#160;lista.c'],['../lista_8h.html#a7b5c369bc952d9301aa6731945f04ddb',1,'iterador_primeiro_lista(lista *p):&#160;lista.c']]],
+  ['iterador_5fproximo_5ffila_15',['iterador_Proximo_fila',['../fila_8c.html#aa031ea63cb0f9b293b7e3e89406483d5',1,'iterador_Proximo_fila(Iterador *i):&#160;fila.c'],['../fila_8h.html#aa031ea63cb0f9b293b7e3e89406483d5',1,'iterador_Proximo_fila(Iterador *i):&#160;fila.c']]],
+  ['iterador_5fproximo_5flista_16',['iterador_proximo_lista',['../lista_8c.html#aac22a59bbc6ec313319d15a58fcb8819',1,'iterador_proximo_lista(iterador i):&#160;lista.c'],['../lista_8h.html#aac22a59bbc6ec313319d15a58fcb8819',1,'iterador_proximo_lista(iterador i):&#160;lista.c']]],
+  ['iterador_5fvalido_5ffila_17',['iterador_Valido_fila',['../fila_8c.html#aae9997f9dcb85cdd91b0782cae70d2f3',1,'iterador_Valido_fila(Iterador i):&#160;fila.c'],['../fila_8h.html#aae9997f9dcb85cdd91b0782cae70d2f3',1,'iterador_Valido_fila(Iterador i):&#160;fila.c']]],
+  ['iterador_5fvalido_5flista_18',['iterador_valido_lista',['../lista_8c.html#a2977ad1772639d6e87f4c3efb54bd3c0',1,'iterador_valido_lista(iterador i):&#160;lista.c'],['../lista_8h.html#a2977ad1772639d6e87f4c3efb54bd3c0',1,'iterador_valido_lista(iterador i):&#160;lista.c']]],
+  ['iterador_5fvazio_5flista_19',['iterador_vazio_lista',['../lista_8c.html#a73ac180368f45a110c9554df250b77ff',1,'iterador_vazio_lista(iterador i):&#160;lista.c'],['../lista_8h.html#a73ac180368f45a110c9554df250b77ff',1,'iterador_vazio_lista(iterador i):&#160;lista.c']]]
+];

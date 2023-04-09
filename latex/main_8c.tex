@@ -1,0 +1,149 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}fila.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lista.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}musica.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_a4f2725162ae258af834c26c78c8a697c}{TAM\+\_\+\+MAX\+\_\+\+FILA}}~5000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a26cbeb305d75ad3415000b92f66de916}{Passa\+\_\+musica}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p, \mbox{\hyperlink{structfila}{fila}} $\ast$f, int loop\+\_\+anterior)
+\item 
+void \mbox{\hyperlink{main_8c_af4b92b59ca30f960370635d4a1986a5c}{Ver\+\_\+\+Lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+void \mbox{\hyperlink{main_8c_a39f7386c99f0aa486f99e94eed579b8d}{Ver\+\_\+\+Fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$p)
+\item 
+\mbox{\hyperlink{structiterador}{iterador}} \mbox{\hyperlink{main_8c_a5a6a251b34d31e8a39af9ddf7c24494b}{Busca\+\_\+\+Musica}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p, char item\mbox{[}$\,$\mbox{]}, char item2\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_a4f2725162ae258af834c26c78c8a697c}\label{main_8c_a4f2725162ae258af834c26c78c8a697c}} 
+\index{main.c@{main.c}!TAM\_MAX\_FILA@{TAM\_MAX\_FILA}}
+\index{TAM\_MAX\_FILA@{TAM\_MAX\_FILA}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{TAM\_MAX\_FILA}{TAM\_MAX\_FILA}}
+{\footnotesize\ttfamily \#define TAM\+\_\+\+MAX\+\_\+\+FILA~5000}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a5a6a251b34d31e8a39af9ddf7c24494b}\label{main_8c_a5a6a251b34d31e8a39af9ddf7c24494b}} 
+\index{main.c@{main.c}!Busca\_Musica@{Busca\_Musica}}
+\index{Busca\_Musica@{Busca\_Musica}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Busca\_Musica()}{Busca\_Musica()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structiterador}{iterador}} Busca\+\_\+\+Musica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p,  }\item[{char}]{item\mbox{[}$\,$\mbox{]},  }\item[{char}]{item2\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{main_8c_a5a6a251b34d31e8a39af9ddf7c24494b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{main_8c_a5a6a251b34d31e8a39af9ddf7c24494b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a26cbeb305d75ad3415000b92f66de916}\label{main_8c_a26cbeb305d75ad3415000b92f66de916}} 
+\index{main.c@{main.c}!Passa\_musica@{Passa\_musica}}
+\index{Passa\_musica@{Passa\_musica}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Passa\_musica()}{Passa\_musica()}}
+{\footnotesize\ttfamily int Passa\+\_\+musica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f,  }\item[{int}]{loop\+\_\+anterior }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a26cbeb305d75ad3415000b92f66de916_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{main_8c_a26cbeb305d75ad3415000b92f66de916_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a39f7386c99f0aa486f99e94eed579b8d}\label{main_8c_a39f7386c99f0aa486f99e94eed579b8d}} 
+\index{main.c@{main.c}!Ver\_Fila@{Ver\_Fila}}
+\index{Ver\_Fila@{Ver\_Fila}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Ver\_Fila()}{Ver\_Fila()}}
+{\footnotesize\ttfamily void Ver\+\_\+\+Fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{main_8c_a39f7386c99f0aa486f99e94eed579b8d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{main_8c_a39f7386c99f0aa486f99e94eed579b8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_af4b92b59ca30f960370635d4a1986a5c}\label{main_8c_af4b92b59ca30f960370635d4a1986a5c}} 
+\index{main.c@{main.c}!Ver\_Lista@{Ver\_Lista}}
+\index{Ver\_Lista@{Ver\_Lista}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Ver\_Lista()}{Ver\_Lista()}}
+{\footnotesize\ttfamily void Ver\+\_\+\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{main_8c_af4b92b59ca30f960370635d4a1986a5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{main_8c_af4b92b59ca30f960370635d4a1986a5c_icgraph}
+\end{center}
+\end{figure}

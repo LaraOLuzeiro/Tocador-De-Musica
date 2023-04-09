@@ -1,0 +1,271 @@
+\hypertarget{fila_8h}{}\doxysection{fila.\+h File Reference}
+\label{fila_8h}\index{fila.h@{fila.h}}
+{\ttfamily \#include \char`\"{}musica.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lista.\+h\char`\"{}}\newline
+Include dependency graph for fila.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{fila_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{fila_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfila}{fila}}
+\item 
+struct \mbox{\hyperlink{struct_iterador}{Iterador}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{structiterador}{iterador}} \mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}}
+\item 
+typedef struct \mbox{\hyperlink{structfila}{fila}} \mbox{\hyperlink{fila_8h_a0f791f085a438fc76b287e0619e3fcbb}{fila}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structfila}{fila}} $\ast$ \mbox{\hyperlink{fila_8h_a689f661bd1634931991df42bad2b024e}{inicializa\+\_\+fila}} (int qt\+Max)
+\item 
+int \mbox{\hyperlink{fila_8h_a9a7c607277e152964651be6746603b07}{vazia\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+int \mbox{\hyperlink{fila_8h_aa1a11046a8f9da57923775b30f560986}{cheia\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+void \mbox{\hyperlink{fila_8h_a64f4e082f66326c4f5cf9dc6e2f5ae38}{limpa\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+void \mbox{\hyperlink{fila_8h_a8d748d061fdfaf8bc9823aeb0599641e}{destroi\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+int \mbox{\hyperlink{fila_8h_ad18418bfa1c10bb108970ec3ebcc7428}{insere\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f, \mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}} dado)
+\item 
+\mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}} $\ast$ \mbox{\hyperlink{fila_8h_aa49010ddb8b0f898c3a56230f7d464e7}{remove\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+unsigned \mbox{\hyperlink{fila_8h_a297386119d0fb289a0eb559c3d5cd53d}{quantidade\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+void \mbox{\hyperlink{fila_8h_a0bb47f67dba3071336a895ac5397cec8}{iterador\+\_\+inicializa\+\_\+fila}} (\mbox{\hyperlink{struct_iterador}{Iterador}} $\ast$i, \mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+\mbox{\hyperlink{struct_iterador}{Iterador}} $\ast$ \mbox{\hyperlink{fila_8h_aa031ea63cb0f9b293b7e3e89406483d5}{iterador\+\_\+\+Proximo\+\_\+fila}} (\mbox{\hyperlink{struct_iterador}{Iterador}} $\ast$i)
+\item 
+\mbox{\hyperlink{struct_iterador}{Iterador}} \mbox{\hyperlink{fila_8h_aa68d74d58c058989cafc8883d589bec2}{iterador\+\_\+\+Primeiro\+\_\+fila}} (\mbox{\hyperlink{structfila}{fila}} $\ast$f)
+\item 
+int \mbox{\hyperlink{fila_8h_aae9997f9dcb85cdd91b0782cae70d2f3}{iterador\+\_\+\+Valido\+\_\+fila}} (\mbox{\hyperlink{struct_iterador}{Iterador}} i)
+\item 
+\mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}} \mbox{\hyperlink{fila_8h_a704fb9218473d58a47a07588ad2eb577}{iterador\+\_\+\+Elemento\+\_\+fila}} (\mbox{\hyperlink{struct_iterador}{Iterador}} i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{fila_8h_a0f791f085a438fc76b287e0619e3fcbb}\label{fila_8h_a0f791f085a438fc76b287e0619e3fcbb}} 
+\index{fila.h@{fila.h}!fila@{fila}}
+\index{fila@{fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{fila}{fila}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structfila}{fila}} \mbox{\hyperlink{structfila}{fila}}}
+
+\mbox{\Hypertarget{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}\label{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}} 
+\index{fila.h@{fila.h}!j@{j}}
+\index{j@{j}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structiterador}{iterador}} \mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fila_8h_aa1a11046a8f9da57923775b30f560986}\label{fila_8h_aa1a11046a8f9da57923775b30f560986}} 
+\index{fila.h@{fila.h}!cheia\_fila@{cheia\_fila}}
+\index{cheia\_fila@{cheia\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{cheia\_fila()}{cheia\_fila()}}
+{\footnotesize\ttfamily int cheia\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{fila_8h_aa1a11046a8f9da57923775b30f560986_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_a8d748d061fdfaf8bc9823aeb0599641e}\label{fila_8h_a8d748d061fdfaf8bc9823aeb0599641e}} 
+\index{fila.h@{fila.h}!destroi\_fila@{destroi\_fila}}
+\index{destroi\_fila@{destroi\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{destroi\_fila()}{destroi\_fila()}}
+{\footnotesize\ttfamily void destroi\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{fila_8h_a8d748d061fdfaf8bc9823aeb0599641e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_a689f661bd1634931991df42bad2b024e}\label{fila_8h_a689f661bd1634931991df42bad2b024e}} 
+\index{fila.h@{fila.h}!inicializa\_fila@{inicializa\_fila}}
+\index{inicializa\_fila@{inicializa\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{inicializa\_fila()}{inicializa\_fila()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structfila}{fila}} $\ast$ inicializa\+\_\+fila (\begin{DoxyParamCaption}\item[{int}]{qt\+Max }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{fila_8h_a689f661bd1634931991df42bad2b024e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_ad18418bfa1c10bb108970ec3ebcc7428}\label{fila_8h_ad18418bfa1c10bb108970ec3ebcc7428}} 
+\index{fila.h@{fila.h}!insere\_fila@{insere\_fila}}
+\index{insere\_fila@{insere\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{insere\_fila()}{insere\_fila()}}
+{\footnotesize\ttfamily int insere\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}}}]{dado }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{fila_8h_ad18418bfa1c10bb108970ec3ebcc7428_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{fila_8h_ad18418bfa1c10bb108970ec3ebcc7428_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_a704fb9218473d58a47a07588ad2eb577}\label{fila_8h_a704fb9218473d58a47a07588ad2eb577}} 
+\index{fila.h@{fila.h}!iterador\_Elemento\_fila@{iterador\_Elemento\_fila}}
+\index{iterador\_Elemento\_fila@{iterador\_Elemento\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_Elemento\_fila()}{iterador\_Elemento\_fila()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}} iterador\+\_\+\+Elemento\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_iterador}{Iterador}}}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila_8h_a704fb9218473d58a47a07588ad2eb577_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_a0bb47f67dba3071336a895ac5397cec8}\label{fila_8h_a0bb47f67dba3071336a895ac5397cec8}} 
+\index{fila.h@{fila.h}!iterador\_inicializa\_fila@{iterador\_inicializa\_fila}}
+\index{iterador\_inicializa\_fila@{iterador\_inicializa\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_inicializa\_fila()}{iterador\_inicializa\_fila()}}
+{\footnotesize\ttfamily void iterador\+\_\+inicializa\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_iterador}{Iterador}} $\ast$}]{i,  }\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fila_8h_aa68d74d58c058989cafc8883d589bec2}\label{fila_8h_aa68d74d58c058989cafc8883d589bec2}} 
+\index{fila.h@{fila.h}!iterador\_Primeiro\_fila@{iterador\_Primeiro\_fila}}
+\index{iterador\_Primeiro\_fila@{iterador\_Primeiro\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_Primeiro\_fila()}{iterador\_Primeiro\_fila()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_iterador}{Iterador}} iterador\+\_\+\+Primeiro\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila_8h_aa68d74d58c058989cafc8883d589bec2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_aa031ea63cb0f9b293b7e3e89406483d5}\label{fila_8h_aa031ea63cb0f9b293b7e3e89406483d5}} 
+\index{fila.h@{fila.h}!iterador\_Proximo\_fila@{iterador\_Proximo\_fila}}
+\index{iterador\_Proximo\_fila@{iterador\_Proximo\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_Proximo\_fila()}{iterador\_Proximo\_fila()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_iterador}{Iterador}} $\ast$ iterador\+\_\+\+Proximo\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_iterador}{Iterador}} $\ast$}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila_8h_aa031ea63cb0f9b293b7e3e89406483d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_aae9997f9dcb85cdd91b0782cae70d2f3}\label{fila_8h_aae9997f9dcb85cdd91b0782cae70d2f3}} 
+\index{fila.h@{fila.h}!iterador\_Valido\_fila@{iterador\_Valido\_fila}}
+\index{iterador\_Valido\_fila@{iterador\_Valido\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_Valido\_fila()}{iterador\_Valido\_fila()}}
+{\footnotesize\ttfamily int iterador\+\_\+\+Valido\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_iterador}{Iterador}}}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{fila_8h_aae9997f9dcb85cdd91b0782cae70d2f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_a64f4e082f66326c4f5cf9dc6e2f5ae38}\label{fila_8h_a64f4e082f66326c4f5cf9dc6e2f5ae38}} 
+\index{fila.h@{fila.h}!limpa\_fila@{limpa\_fila}}
+\index{limpa\_fila@{limpa\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{limpa\_fila()}{limpa\_fila()}}
+{\footnotesize\ttfamily void limpa\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{fila_8h_a64f4e082f66326c4f5cf9dc6e2f5ae38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_a297386119d0fb289a0eb559c3d5cd53d}\label{fila_8h_a297386119d0fb289a0eb559c3d5cd53d}} 
+\index{fila.h@{fila.h}!quantidade\_fila@{quantidade\_fila}}
+\index{quantidade\_fila@{quantidade\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{quantidade\_fila()}{quantidade\_fila()}}
+{\footnotesize\ttfamily unsigned quantidade\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila_8h_a297386119d0fb289a0eb559c3d5cd53d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_aa49010ddb8b0f898c3a56230f7d464e7}\label{fila_8h_aa49010ddb8b0f898c3a56230f7d464e7}} 
+\index{fila.h@{fila.h}!remove\_fila@{remove\_fila}}
+\index{remove\_fila@{remove\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{remove\_fila()}{remove\_fila()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}} $\ast$ remove\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{fila_8h_aa49010ddb8b0f898c3a56230f7d464e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{fila_8h_aa49010ddb8b0f898c3a56230f7d464e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fila_8h_a9a7c607277e152964651be6746603b07}\label{fila_8h_a9a7c607277e152964651be6746603b07}} 
+\index{fila.h@{fila.h}!vazia\_fila@{vazia\_fila}}
+\index{vazia\_fila@{vazia\_fila}!fila.h@{fila.h}}
+\doxysubsubsection{\texorpdfstring{vazia\_fila()}{vazia\_fila()}}
+{\footnotesize\ttfamily int vazia\+\_\+fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila}{fila}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila_8h_a9a7c607277e152964651be6746603b07_icgraph}
+\end{center}
+\end{figure}

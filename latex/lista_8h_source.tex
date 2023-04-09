@@ -1,0 +1,64 @@
+\hypertarget{lista_8h_source}{}\doxysection{lista.\+h}
+\mbox{\hyperlink{lista_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LISTA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LISTA\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{musica_8h}{musica.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Musica\ =\ struct\ de\ campos\ nome\ e\ artista}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structmusica}{Musica}}\ \mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structno}{no}}\ \{}
+\DoxyCodeLine{00010\ \ \ \mbox{\hyperlink{structmusica}{T}}\ \mbox{\hyperlink{structno_aaeb0f0ed34c31a834ce36fe4defd6c5e}{item}};}
+\DoxyCodeLine{00011\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structno}{no}}\ *\mbox{\hyperlink{structno_af8adf4ddb6c37286623c1e934c5a97b2}{next}};\ \textcolor{comment}{//\ ponteiro\ q\ aponta\ pro\ proximo\ nó,\ que\ aponta\ para\ o}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ próximo,\ ligando\ a\ lista}}
+\DoxyCodeLine{00013\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structno}{no}}\ *\mbox{\hyperlink{structno_acfca3739ade0388c304a2def38931b61}{prev}};\ \textcolor{comment}{//\ ponteiro\ q\ aponta\ pro\ nó\ anterior,\ que\ aponta\ para\ o}}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ anterior,\ ligando\ a\ lista}}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{\ \textcolor{comment}{//\ mudar\ para\ encadeamento\ duplo}}
+\DoxyCodeLine{00018\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structno}{no}}\ *\mbox{\hyperlink{structlista_a549f0e0ab42cb806f3514f858c42e317}{sentinela}};}
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{structlista_a8b3f7b5cf00ccf0dd445c1012b6c30c5}{quantidade}};}
+\DoxyCodeLine{00020\ \}\ \mbox{\hyperlink{structlista}{lista}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00023\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structno}{no}}\ *\mbox{\hyperlink{structiterador_a553620cca53268b035a8600935905126}{elemento}};}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{structlista}{lista}}\ *\mbox{\hyperlink{structiterador_a6098200949290d10afd49613a0a81e49}{lista}};}
+\DoxyCodeLine{00025\ \}\ \mbox{\hyperlink{structiterador}{iterador}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a0419ed36e7080e9aba2c8e2568566fae}{inicializa\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p);\ \textcolor{comment}{//\ inicializa\ a\ lista\ no\ início\ da\ execução}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a4b9a3f8b6cd1066960f72b263ed8184b}{destruir\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p);\ \textcolor{comment}{//\ destroi\ a\ lista\ no\ final\ da\ execução}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_aca08b1da9ebd2c053d77c3c7410513f4}{vazia\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p);\ \textcolor{comment}{//\ checa\ se\ a\ lista\ está\ vazia}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a9406b21c8eae63230dfba4783d0901c8}{insere\_inicio\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p,\ \mbox{\hyperlink{structmusica}{T}}\ \mbox{\hyperlink{structno_aaeb0f0ed34c31a834ce36fe4defd6c5e}{item}});\ \textcolor{comment}{//\ insere\ um\ item\ no\ início\ lista}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_ad5ef7b6de6c184a03a0a74637dfabd3e}{insere\_fim\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p,\ \mbox{\hyperlink{structmusica}{T}}\ \mbox{\hyperlink{structno_aaeb0f0ed34c31a834ce36fe4defd6c5e}{item}});\ \textcolor{comment}{//\ insere\ um\ item\ no\ final\ da\ lista}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_af7fc94554c4202723792c9a54aa2528d}{remove\_inicio\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p);\ \textcolor{comment}{//\ remove\ o\ início\ da\ lista}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a246e76141b96d9308daef847a7a7110b}{remove\_fim\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p);\ \textcolor{comment}{//\ remove\ o\ final\ da\ lista}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \mbox{\hyperlink{structmusica}{T}}\ \mbox{\hyperlink{lista_8h_a5e63b8219343a3477415f5d014b21268}{retorna\_inicio\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p);\ \textcolor{comment}{//\ retorna\ o\ primeiro\ elemento\ da\ lista}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Mexendo\ com\ os\ iteradores,\ funções\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \mbox{\hyperlink{structiterador}{iterador}}\ \mbox{\hyperlink{lista_8h_a7b5c369bc952d9301aa6731945f04ddb}{iterador\_primeiro\_lista}}(\mbox{\hyperlink{structlista}{lista}}\ *p);\ \textcolor{comment}{//\ retorna\ o\ iterador\ do\ primeiro\ elemento}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \mbox{\hyperlink{structiterador}{iterador}}\ \mbox{\hyperlink{lista_8h_aac22a59bbc6ec313319d15a58fcb8819}{iterador\_proximo\_lista}}(\mbox{\hyperlink{structiterador}{iterador}}\ i);\ \textcolor{comment}{//\ retorna\ o\ iterador\ do\ proximo\ elemento}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \mbox{\hyperlink{structmusica}{T}}\ \mbox{\hyperlink{lista_8h_ac6fa43fe1ecf3785d38d261ae6e3c077}{iterador\_elemento\_lista}}(\mbox{\hyperlink{structiterador}{iterador}}\ i);\ \textcolor{comment}{//\ retorna\ o\ elemento\ apontado\ pelo\ iterador\ i}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a2977ad1772639d6e87f4c3efb54bd3c0}{iterador\_valido\_lista}}(\mbox{\hyperlink{structiterador}{iterador}}\ i);\ \textcolor{comment}{//\ retorna\ 1\ se\ iterador\ é\ válido,\ 0\ se\ não\ é}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \mbox{\hyperlink{structiterador}{iterador}}\ \mbox{\hyperlink{lista_8h_ae1989e441451e47d55c122a775cf43cb}{retira\_lista}}(\mbox{\hyperlink{structiterador}{iterador}}\ i);\ \textcolor{comment}{//\ retira\ o\ elemento\ apontado\ pelo\ iterador\ i}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a06b65f7ff6155304349bf9800c6d789e}{iterador\_nulo\_lista}}(\mbox{\hyperlink{structiterador}{iterador}}\ *i);\ \textcolor{comment}{//\ atribui\ NULL\ ao\ elemento\ do\ iterador}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a73ac180368f45a110c9554df250b77ff}{iterador\_vazio\_lista}}(\mbox{\hyperlink{structiterador}{iterador}}\ i);\ \textcolor{comment}{//\ retorna\ 1\ se\ o\ iterador\ for\ nulo,\ e\ zero\ se\ nao}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

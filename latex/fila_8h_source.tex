@@ -1,0 +1,53 @@
+\hypertarget{fila_8h_source}{}\doxysection{fila.\+h}
+\mbox{\hyperlink{fila_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FILA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FILA\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{musica_8h}{musica.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{lista_8h}{lista.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structiterador}{iterador}}\ \mbox{\hyperlink{fila_8h_afe3dadbc71d540b5f144d9c3c9c6abe5}{j}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structfila}{fila}}\ \{}
+\DoxyCodeLine{00010\ \ \ \mbox{\hyperlink{structiterador}{j}}\ *\mbox{\hyperlink{structfila_ab7e9085a59c6c6c7f40e124478463e0b}{elemento}};\ \textcolor{comment}{//\ ponteiro\ para\ os\ elementos\ da\ fila}}
+\DoxyCodeLine{00011\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structfila_a73f53b0349bb995757a60c9c0bde3569}{inicio}};\ \textcolor{comment}{//\ indice\ do\ primeiro\ elemento\ da\ fila\ }}
+\DoxyCodeLine{00012\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structfila_a22be39504679a934aea082c76c95bb68}{fim}};\ \textcolor{comment}{//\ indice\ do\ ultimo\ elemento\ da\ fila}}
+\DoxyCodeLine{00013\ \ \ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{structfila_a8b3f7b5cf00ccf0dd445c1012b6c30c5}{quantidade}};\ \textcolor{comment}{//\ quantidade\ de\ elementos\ presentes\ na\ fila\ }}
+\DoxyCodeLine{00014\ \ \ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{structfila_a4ab24814211a0f58cca06cf6f0aa4cd0}{qtMax}};\ \textcolor{comment}{//\ quantidade\ maxima\ de\ elementos\ que\ podem\ ser\ colocados\ na\ fila}}
+\DoxyCodeLine{00015\ \}\ \mbox{\hyperlink{structfila}{fila}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{structiterador}{j}}\ *\mbox{\hyperlink{struct_iterador_a112a91cdab40a9f5714bf1c392685171}{elemento\_atual}};}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{structfila}{fila}}\ *\mbox{\hyperlink{struct_iterador_ac09eac0ff3140818300df76400a1a478}{fila}};}
+\DoxyCodeLine{00020\ \}\ \mbox{\hyperlink{struct_iterador}{Iterador}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \mbox{\hyperlink{structfila}{fila}}*\ \mbox{\hyperlink{fila_8h_a689f661bd1634931991df42bad2b024e}{inicializa\_fila}}(\textcolor{keywordtype}{int}\ qtMax);\ \textcolor{comment}{//\ inicializa\ a\ fila\ no\ começo\ da\ execução}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{fila_8h_a9a7c607277e152964651be6746603b07}{vazia\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Retorna\ verdadeiro\ se\ ela\ está\ vazia,\ senão\ falso}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{fila_8h_aa1a11046a8f9da57923775b30f560986}{cheia\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Retorna\ verdadeiro\ caso\ cheia,\ senão\ falso}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{fila_8h_a64f4e082f66326c4f5cf9dc6e2f5ae38}{limpa\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Limpa\ a\ fila}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{fila_8h_a8d748d061fdfaf8bc9823aeb0599641e}{destroi\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Desaloca\ a\ memória\ que\ foi\ usada\ na\ fila\ }}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{fila_8h_ad18418bfa1c10bb108970ec3ebcc7428}{insere\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f,\ \mbox{\hyperlink{structiterador}{j}}\ dado);\ \textcolor{comment}{//\ Insere\ no\ final\ do\ vetor}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \mbox{\hyperlink{structiterador}{j}}*\ \mbox{\hyperlink{fila_8h_aa49010ddb8b0f898c3a56230f7d464e7}{remove\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Remove\ no\ inicio\ do\ vetor}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{fila_8h_a297386119d0fb289a0eb559c3d5cd53d}{quantidade\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Retorna\ a\ quantidade\ de\ elementos}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{fila_8h_a0bb47f67dba3071336a895ac5397cec8}{iterador\_inicializa\_fila}}(\mbox{\hyperlink{struct_iterador}{Iterador}}\ *i,\ \mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Inicializa\ o\ iterador}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \mbox{\hyperlink{struct_iterador}{Iterador}}*\ \mbox{\hyperlink{fila_8h_aa031ea63cb0f9b293b7e3e89406483d5}{iterador\_Proximo\_fila}}(\mbox{\hyperlink{struct_iterador}{Iterador}}\ *i);\ \textcolor{comment}{//\ Retorna\ o\ iterador\ do\ proximo\ elemento}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \mbox{\hyperlink{struct_iterador}{Iterador}}\ \mbox{\hyperlink{fila_8h_aa68d74d58c058989cafc8883d589bec2}{iterador\_Primeiro\_fila}}(\mbox{\hyperlink{structfila}{fila}}\ *f);\ \textcolor{comment}{//\ Retorna\ o\ iterador\ do\ primeiro\ elemento}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{fila_8h_aae9997f9dcb85cdd91b0782cae70d2f3}{iterador\_Valido\_fila}}(\mbox{\hyperlink{struct_iterador}{Iterador}}\ i);\ \textcolor{comment}{//\ Checa\ se\ o\ iterador\ é\ valido}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \mbox{\hyperlink{structiterador}{j}}\ \mbox{\hyperlink{fila_8h_a704fb9218473d58a47a07588ad2eb577}{iterador\_Elemento\_fila}}(\mbox{\hyperlink{struct_iterador}{Iterador}}\ i);\ \textcolor{comment}{//\ Retorna\ elemento\ que\ o\ iterador\ aponta}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

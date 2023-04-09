@@ -1,0 +1,304 @@
+\hypertarget{lista_8h}{}\doxysection{lista.\+h File Reference}
+\label{lista_8h}\index{lista.h@{lista.h}}
+{\ttfamily \#include \char`\"{}musica.\+h\char`\"{}}\newline
+Include dependency graph for lista.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{lista_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{lista_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structno}{no}}
+\item 
+struct \mbox{\hyperlink{structlista}{lista}}
+\item 
+struct \mbox{\hyperlink{structiterador}{iterador}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{musica_8h_afe69e5b498487e79b8a308ff5b9cf3ce}{Musica}} \mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{lista_8h_a0419ed36e7080e9aba2c8e2568566fae}{inicializa\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+void \mbox{\hyperlink{lista_8h_a4b9a3f8b6cd1066960f72b263ed8184b}{destruir\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+int \mbox{\hyperlink{lista_8h_aca08b1da9ebd2c053d77c3c7410513f4}{vazia\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+int \mbox{\hyperlink{lista_8h_a9406b21c8eae63230dfba4783d0901c8}{insere\+\_\+inicio\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p, \mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}} item)
+\item 
+int \mbox{\hyperlink{lista_8h_ad5ef7b6de6c184a03a0a74637dfabd3e}{insere\+\_\+fim\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p, \mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}} item)
+\item 
+void \mbox{\hyperlink{lista_8h_af7fc94554c4202723792c9a54aa2528d}{remove\+\_\+inicio\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+void \mbox{\hyperlink{lista_8h_a246e76141b96d9308daef847a7a7110b}{remove\+\_\+fim\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+\mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}} \mbox{\hyperlink{lista_8h_a5e63b8219343a3477415f5d014b21268}{retorna\+\_\+inicio\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+\mbox{\hyperlink{structiterador}{iterador}} \mbox{\hyperlink{lista_8h_a7b5c369bc952d9301aa6731945f04ddb}{iterador\+\_\+primeiro\+\_\+lista}} (\mbox{\hyperlink{structlista}{lista}} $\ast$p)
+\item 
+\mbox{\hyperlink{structiterador}{iterador}} \mbox{\hyperlink{lista_8h_aac22a59bbc6ec313319d15a58fcb8819}{iterador\+\_\+proximo\+\_\+lista}} (\mbox{\hyperlink{structiterador}{iterador}} i)
+\item 
+\mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}} \mbox{\hyperlink{lista_8h_ac6fa43fe1ecf3785d38d261ae6e3c077}{iterador\+\_\+elemento\+\_\+lista}} (\mbox{\hyperlink{structiterador}{iterador}} i)
+\item 
+int \mbox{\hyperlink{lista_8h_a2977ad1772639d6e87f4c3efb54bd3c0}{iterador\+\_\+valido\+\_\+lista}} (\mbox{\hyperlink{structiterador}{iterador}} i)
+\item 
+\mbox{\hyperlink{structiterador}{iterador}} \mbox{\hyperlink{lista_8h_ae1989e441451e47d55c122a775cf43cb}{retira\+\_\+lista}} (\mbox{\hyperlink{structiterador}{iterador}} i)
+\item 
+void \mbox{\hyperlink{lista_8h_a06b65f7ff6155304349bf9800c6d789e}{iterador\+\_\+nulo\+\_\+lista}} (\mbox{\hyperlink{structiterador}{iterador}} $\ast$i)
+\item 
+int \mbox{\hyperlink{lista_8h_a73ac180368f45a110c9554df250b77ff}{iterador\+\_\+vazio\+\_\+lista}} (\mbox{\hyperlink{structiterador}{iterador}} i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{lista_8h_a5b0b56ca92c479558a5b584f434382dc}\label{lista_8h_a5b0b56ca92c479558a5b584f434382dc}} 
+\index{lista.h@{lista.h}!T@{T}}
+\index{T@{T}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{musica_8h_afe69e5b498487e79b8a308ff5b9cf3ce}{Musica}} \mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{lista_8h_a4b9a3f8b6cd1066960f72b263ed8184b}\label{lista_8h_a4b9a3f8b6cd1066960f72b263ed8184b}} 
+\index{lista.h@{lista.h}!destruir\_lista@{destruir\_lista}}
+\index{destruir\_lista@{destruir\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{destruir\_lista()}{destruir\_lista()}}
+{\footnotesize\ttfamily void destruir\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_a4b9a3f8b6cd1066960f72b263ed8184b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{lista_8h_a4b9a3f8b6cd1066960f72b263ed8184b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a0419ed36e7080e9aba2c8e2568566fae}\label{lista_8h_a0419ed36e7080e9aba2c8e2568566fae}} 
+\index{lista.h@{lista.h}!inicializa\_lista@{inicializa\_lista}}
+\index{inicializa\_lista@{inicializa\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{inicializa\_lista()}{inicializa\_lista()}}
+{\footnotesize\ttfamily void inicializa\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{lista_8h_a0419ed36e7080e9aba2c8e2568566fae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_ad5ef7b6de6c184a03a0a74637dfabd3e}\label{lista_8h_ad5ef7b6de6c184a03a0a74637dfabd3e}} 
+\index{lista.h@{lista.h}!insere\_fim\_lista@{insere\_fim\_lista}}
+\index{insere\_fim\_lista@{insere\_fim\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{insere\_fim\_lista()}{insere\_fim\_lista()}}
+{\footnotesize\ttfamily int insere\+\_\+fim\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}}}]{item }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_ad5ef7b6de6c184a03a0a74637dfabd3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a9406b21c8eae63230dfba4783d0901c8}\label{lista_8h_a9406b21c8eae63230dfba4783d0901c8}} 
+\index{lista.h@{lista.h}!insere\_inicio\_lista@{insere\_inicio\_lista}}
+\index{insere\_inicio\_lista@{insere\_inicio\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{insere\_inicio\_lista()}{insere\_inicio\_lista()}}
+{\footnotesize\ttfamily int insere\+\_\+inicio\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}}}]{item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lista_8h_ac6fa43fe1ecf3785d38d261ae6e3c077}\label{lista_8h_ac6fa43fe1ecf3785d38d261ae6e3c077}} 
+\index{lista.h@{lista.h}!iterador\_elemento\_lista@{iterador\_elemento\_lista}}
+\index{iterador\_elemento\_lista@{iterador\_elemento\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_elemento\_lista()}{iterador\_elemento\_lista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}} iterador\+\_\+elemento\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structiterador}{iterador}}}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_ac6fa43fe1ecf3785d38d261ae6e3c077_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a06b65f7ff6155304349bf9800c6d789e}\label{lista_8h_a06b65f7ff6155304349bf9800c6d789e}} 
+\index{lista.h@{lista.h}!iterador\_nulo\_lista@{iterador\_nulo\_lista}}
+\index{iterador\_nulo\_lista@{iterador\_nulo\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_nulo\_lista()}{iterador\_nulo\_lista()}}
+{\footnotesize\ttfamily void iterador\+\_\+nulo\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structiterador}{iterador}} $\ast$}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_a06b65f7ff6155304349bf9800c6d789e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a7b5c369bc952d9301aa6731945f04ddb}\label{lista_8h_a7b5c369bc952d9301aa6731945f04ddb}} 
+\index{lista.h@{lista.h}!iterador\_primeiro\_lista@{iterador\_primeiro\_lista}}
+\index{iterador\_primeiro\_lista@{iterador\_primeiro\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_primeiro\_lista()}{iterador\_primeiro\_lista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structiterador}{iterador}} iterador\+\_\+primeiro\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_a7b5c369bc952d9301aa6731945f04ddb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_aac22a59bbc6ec313319d15a58fcb8819}\label{lista_8h_aac22a59bbc6ec313319d15a58fcb8819}} 
+\index{lista.h@{lista.h}!iterador\_proximo\_lista@{iterador\_proximo\_lista}}
+\index{iterador\_proximo\_lista@{iterador\_proximo\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_proximo\_lista()}{iterador\_proximo\_lista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structiterador}{iterador}} iterador\+\_\+proximo\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structiterador}{iterador}}}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_aac22a59bbc6ec313319d15a58fcb8819_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a2977ad1772639d6e87f4c3efb54bd3c0}\label{lista_8h_a2977ad1772639d6e87f4c3efb54bd3c0}} 
+\index{lista.h@{lista.h}!iterador\_valido\_lista@{iterador\_valido\_lista}}
+\index{iterador\_valido\_lista@{iterador\_valido\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_valido\_lista()}{iterador\_valido\_lista()}}
+{\footnotesize\ttfamily int iterador\+\_\+valido\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structiterador}{iterador}}}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_a2977ad1772639d6e87f4c3efb54bd3c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a73ac180368f45a110c9554df250b77ff}\label{lista_8h_a73ac180368f45a110c9554df250b77ff}} 
+\index{lista.h@{lista.h}!iterador\_vazio\_lista@{iterador\_vazio\_lista}}
+\index{iterador\_vazio\_lista@{iterador\_vazio\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{iterador\_vazio\_lista()}{iterador\_vazio\_lista()}}
+{\footnotesize\ttfamily int iterador\+\_\+vazio\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structiterador}{iterador}}}]{i }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{lista_8h_a73ac180368f45a110c9554df250b77ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a246e76141b96d9308daef847a7a7110b}\label{lista_8h_a246e76141b96d9308daef847a7a7110b}} 
+\index{lista.h@{lista.h}!remove\_fim\_lista@{remove\_fim\_lista}}
+\index{remove\_fim\_lista@{remove\_fim\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{remove\_fim\_lista()}{remove\_fim\_lista()}}
+{\footnotesize\ttfamily void remove\+\_\+fim\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{lista_8h_a246e76141b96d9308daef847a7a7110b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_af7fc94554c4202723792c9a54aa2528d}\label{lista_8h_af7fc94554c4202723792c9a54aa2528d}} 
+\index{lista.h@{lista.h}!remove\_inicio\_lista@{remove\_inicio\_lista}}
+\index{remove\_inicio\_lista@{remove\_inicio\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{remove\_inicio\_lista()}{remove\_inicio\_lista()}}
+{\footnotesize\ttfamily void remove\+\_\+inicio\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{lista_8h_af7fc94554c4202723792c9a54aa2528d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_af7fc94554c4202723792c9a54aa2528d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_ae1989e441451e47d55c122a775cf43cb}\label{lista_8h_ae1989e441451e47d55c122a775cf43cb}} 
+\index{lista.h@{lista.h}!retira\_lista@{retira\_lista}}
+\index{retira\_lista@{retira\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{retira\_lista()}{retira\_lista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structiterador}{iterador}} retira\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structiterador}{iterador}}}]{i }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{lista_8h_ae1989e441451e47d55c122a775cf43cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{lista_8h_ae1989e441451e47d55c122a775cf43cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_a5e63b8219343a3477415f5d014b21268}\label{lista_8h_a5e63b8219343a3477415f5d014b21268}} 
+\index{lista.h@{lista.h}!retorna\_inicio\_lista@{retorna\_inicio\_lista}}
+\index{retorna\_inicio\_lista@{retorna\_inicio\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{retorna\_inicio\_lista()}{retorna\_inicio\_lista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lista_8h_a5b0b56ca92c479558a5b584f434382dc}{T}} retorna\+\_\+inicio\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_a5e63b8219343a3477415f5d014b21268_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lista_8h_aca08b1da9ebd2c053d77c3c7410513f4}\label{lista_8h_aca08b1da9ebd2c053d77c3c7410513f4}} 
+\index{lista.h@{lista.h}!vazia\_lista@{vazia\_lista}}
+\index{vazia\_lista@{vazia\_lista}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{vazia\_lista()}{vazia\_lista()}}
+{\footnotesize\ttfamily int vazia\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista}{lista}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h_aca08b1da9ebd2c053d77c3c7410513f4_icgraph}
+\end{center}
+\end{figure}

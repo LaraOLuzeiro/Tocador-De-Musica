@@ -72,7 +72,7 @@ int main() {
 
     insere_fim_lista(&playlist, song); // insere nome da musica e do artista na lista
   }
-  fclose(file); // fecha o arquivo, pois suas informações já foram lidas 
+  fclose(file); // fecha o arquivo, pois suas in
 
   // inicio do programa, ele começa tocando a playlist e a fila esta vazia
   printf("\nIniciando a playlist\n");
@@ -94,7 +94,7 @@ int main() {
 
     printf("Selecione a operação desejada: ");
     // faz a leitura da operação
-    scanf("%s", &operacao); //recebe char pois o usuário pode errar a operação e inserir palavras ao inves dos numeros
+    scanf("%s", operacao); //recebe char pois o usuário pode errar a operação e inserir palavras ao inves dos numeros
     printf("\n");
 
     int op = atoi(operacao); //transforma a string em int
